@@ -885,10 +885,6 @@ footer {
   /* ==========================
      FOOTER
      ========================== */
- footer {
-  background-color: var(--noir);
-  width: 100%;
-   
   .footer-container {
     justify-content: space-between;
     gap: 1rem;
