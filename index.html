@@ -17,18 +17,14 @@
   <header>
     <div class="header-container">
  
-      <video 
-      id="logo-video"
-      class="logo-animation"
-      autoplay 
-      muted 
-      loop 
-      playsinline
-      poster="assets/logo/logo.png"
-    >
-      <source src="assets/video/logo.mp4" type="video/mp4">
-      <source src="assets/video/logo-animation.mov" type="video/quicktime">
-    </video>
+      <video autoplay muted loop playsinline class="logo-animation" poster="assets/logo/logo.png">
+    <!-- MP4 prioritaire pour Chrome -->
+    <source src="assets/video/logo.mp4" type="video/mp4">
+    <!-- MOV fallback pour Safari -->
+    <source src="assets/video/logo-animation.mov" type="video/quicktime">
+    <!-- Fallback image si aucune vidéo n'est supportée -->
+    <img src="assets/logo/logo.png" alt="Logo AB Graphisme">
+  </video>
        <img src="assets/logo/logo.svg" alt="Logo AB Graphisme">
       
       <p class="tagline">Identité visuelle – Affiches – Webdesign – Packaging</p>
